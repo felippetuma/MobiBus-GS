@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+    --color-blue-mobi: #1B6EF3;
+    --color-green-mobi: #12B76A;
+    --color-night-blue-mobi: #0B1F3A;
+    --color-mist-mobi: #F3F6FA;
+    --color-active: #22C55E;
+    --color-attention: #F5B301;
+    --color-alert: #E5484D;
+}
