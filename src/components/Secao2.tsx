@@ -23,7 +23,7 @@ const Secao2 = () => {
       id: "temperatura",
       codigo: "01",
       titulo: "Temperatura",
-      subtitulo: "Sensor DHT22",
+      subtitulo: "Sensor DHT11",
       corAtiva: "bg-gradient-to-br from-sky-500 to-blue-600 text-white shadow-sky-500/35",
       corTexto: "text-sky-600",
       corBadge: "bg-sky-100 text-sky-700",
@@ -96,7 +96,7 @@ const Secao2 = () => {
     <section className="relative z-20 min-h-screen w-full bg-white text-zinc-900 rounded-t-3xl shadow-2xl">
       <div className="max-w-7xl mx-auto px-6 py-16">
         
-        {/* Cabeçalho + Navbar em formato de Cartas */}
+       
         <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-10 pb-12 border-b border-zinc-200">
           <div className="max-w-md">
             <span className="text-xs font-bold uppercase tracking-widest text-sky-600">
@@ -110,7 +110,7 @@ const Secao2 = () => {
             </p>
           </div>
 
-          {/* Navbar de 4 Cartas estilo baralho */}
+          
           <nav aria-label="Navegação de módulos" className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-5">
             {navCartas.map((carta) => {
               const ativo = abaAtiva === carta.id
@@ -124,7 +124,7 @@ const Secao2 = () => {
                       : `bg-white hover:bg-zinc-50 border-zinc-200 hover:border-zinc-300 text-zinc-800 shadow-md hover:-translate-y-2 hover:rotate-0 ${carta.rotacaoBase}`
                   }`}
                 >
-                  {/* Topo da Carta: Número e Mini Indicador */}
+                
                   <div className="flex items-center justify-between w-full">
                     <span
                       className={`text-xs font-extrabold px-2 py-0.5 rounded-md tracking-wider ${
@@ -140,7 +140,7 @@ const Secao2 = () => {
                     />
                   </div>
 
-                  {/* Centro da Carta: Ícone em destaque com moldura interna */}
+                 
                   <div
                     className={`my-auto mx-auto w-16 h-16 rounded-2xl flex items-center justify-center border transition-transform duration-300 group-hover:scale-110 ${
                       ativo
@@ -151,7 +151,6 @@ const Secao2 = () => {
                     {carta.icone}
                   </div>
 
-                  {/* Rodapé da Carta: Título e Subtítulo */}
                   <div className="w-full pt-2 border-t border-current/10">
                     <span className="block font-bold text-sm leading-tight">
                       {carta.titulo}
@@ -170,7 +169,7 @@ const Secao2 = () => {
           </nav>
         </div>
 
-        {/* Área de conteúdo dinâmico controlada pelas Cartas */}
+        
         <div className="mt-12">
           {abaAtiva === "temperatura" && (
             <div className="p-8 rounded-3xl bg-sky-50/70 border border-sky-100">
