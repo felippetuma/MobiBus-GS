@@ -1,5 +1,6 @@
 import Header from "@/components/Header"
 import Secao2 from "@/components/Secao2"
+import Integrantes from "@/components/Integrantes"
 
 const page = () => {
   return (
@@ -9,6 +10,7 @@ const page = () => {
       </div>
 
       <Secao2 />
+      <Integrantes />
     </main>
   )
 }
