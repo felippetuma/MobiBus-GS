@@ -1,8 +1,8 @@
+import BusGrid from "@/components/BusGrid"
+
 const page = () => {
   return (
-    <div>
-      
-    </div>
+    <BusGrid />
   )
 }
 
